@@ -21,15 +21,42 @@
   </header>
 
   <main>
-    <section style="padding:64px 28px;">
-      <div class="container" style="text-align:center;">
-        <div class="section-title">All Properties</div>
-        <p style="color:var(--muted); max-width:900px; margin: 0 auto 28px;">Explore multiple options — filters will be added in Phase 2 to refine price, location, and type.</p>
+    <section class="pad">
+      <div class="container">
 
-        <div class="properties-grid">
-          <!-- 12 property cards -->
+        <div style="text-align:center; margin-bottom:24px;">
+          <div class="section-title">All Properties</div>
+          <p class="muted" style="max-width:800px;margin:0 auto;">
+            Browse verified rentals across Delhi-NCR.
+          </p>
+        </div>
+
+        <div class="home-search">
+          <input type="text" class="home-search-input" placeholder="Enter city or area">
+          <select class="home-search-select">
+            <option value="">Price Range</option>
+            <option value="10000">Below ₹10,000</option>
+            <option value="20000">₹10,000 - ₹20,000</option>
+            <option value="40000">₹20,000 - ₹40,000</option>
+            <option value="40001">Above ₹40,000</option>
+          </select>
+          <select class="home-search-select">
+            <option value="">Property Type</option>
+            <option>1 BHK</option>
+            <option>2 BHK</option>
+            <option>3 BHK</option>
+            <option>Studio</option>
+            <option>Villa</option>
+            <option>Penthouse</option>
+            <option>Duplex</option>
+            <option>Serviced</option>
+          </select>
+          <button class="btn">Apply Filters</button>
+        </div>
+
+        <div class="properties-grid" style="margin-top:28px;">
           <div class="card">
-            <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d" alt="Property 1">
+            <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d" alt="">
             <div class="card-body">
               <div class="card-title">3BHK Premium Apartment</div>
               <div class="card-sub">Delhi • Sector 14</div>
@@ -38,7 +65,7 @@
           </div>
 
           <div class="card">
-            <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2" alt="Property 2">
+            <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2" alt="">
             <div class="card-body">
               <div class="card-title">2BHK Comfort Flat</div>
               <div class="card-sub">Gurgaon • Sector 47</div>
@@ -47,7 +74,7 @@
           </div>
 
           <div class="card">
-            <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be" alt="Property 3">
+            <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be" alt="">
             <div class="card-body">
               <div class="card-title">Luxury Villa with Garden</div>
               <div class="card-sub">Gurgaon • Golf Course</div>
@@ -56,7 +83,7 @@
           </div>
 
           <div class="card">
-            <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914" alt="Property 4">
+            <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914" alt="">
             <div class="card-body">
               <div class="card-title">1BHK Cozy Studio</div>
               <div class="card-sub">Dwarka • Sector 21</div>
@@ -65,7 +92,7 @@
           </div>
 
           <div class="card">
-            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" alt="Property 5">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" alt="">
             <div class="card-body">
               <div class="card-title">Penthouse — Rooftop View</div>
               <div class="card-sub">Delhi • Central</div>
@@ -74,7 +101,7 @@
           </div>
 
           <div class="card">
-            <img src="https://images.unsplash.com/photo-1554995207-c18c203602cb" alt="Property 6">
+            <img src="https://images.unsplash.com/photo-1554995207-c18c203602cb" alt="">
             <div class="card-body">
               <div class="card-title">Family Duplex</div>
               <div class="card-sub">Faridabad • Sector 16</div>
@@ -83,7 +110,7 @@
           </div>
 
           <div class="card">
-            <img src="https://images.unsplash.com/photo-1599423300746-b62533397364" alt="Property 7">
+            <img src="https://images.unsplash.com/photo-1599423300746-b62533397364" alt="">
             <div class="card-body">
               <div class="card-title">Modern Studio</div>
               <div class="card-sub">Noida • Sector 62</div>
@@ -92,7 +119,7 @@
           </div>
 
           <div class="card">
-            <img src="https://images.unsplash.com/photo-1528909514045-2fa4ac7a08ba" alt="Property 8">
+            <img src="https://images.unsplash.com/photo-1528909514045-2fa4ac7a08ba" alt="">
             <div class="card-body">
               <div class="card-title">2BHK Near Metro</div>
               <div class="card-sub">Delhi • Rohini</div>
@@ -101,16 +128,19 @@
           </div>
 
           <div class="card">
-            <img src="RV.png" alt="Property 9">
-            <div class="card-body">
-              <div class="card-title">Rathi Villa</div>
+           <img src="https://images.unsplash.com/photo-1560185127-6ed189bf02f4?auto=format&fit=crop&w=1200&q=80" alt="">
+          <div class="card-body">
+             <div class="card-title">Rathi Villa</div>
               <div class="card-sub">Bharat Vihar</div>
-              <div class="card-meta"><div class="price">₹32,000/mo</div><div class="badge">2 BHK</div></div>
-            </div>
+             <div class="card-meta">
+             <div class="price">₹32,000/mo</div>
+              <div class="badge">2 BHK</div>
+           </div>
+          </div>
           </div>
 
           <div class="card">
-            <img src="https://images.unsplash.com/photo-1475855581690-80accde3ae8b" alt="Property 10">
+             <img src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4?auto=format&fit=crop&w=1200&q=80" alt="">
             <div class="card-body">
               <div class="card-title">Compact 1BHK</div>
               <div class="card-sub">Delhi • Janakpuri</div>
@@ -119,7 +149,7 @@
           </div>
 
           <div class="card">
-            <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2" alt="Property 11">
+            <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2" alt="">
             <div class="card-body">
               <div class="card-title">Serviced Apartment</div>
               <div class="card-sub">Noida • Film City</div>
@@ -128,7 +158,7 @@
           </div>
 
           <div class="card">
-            <img src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4" alt="Property 12">
+            <img src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4" alt="">
             <div class="card-body">
               <div class="card-title">Budget 2BHK</div>
               <div class="card-sub">Greater Noida • Sector 2</div>
@@ -141,10 +171,14 @@
     </section>
   </main>
 
+  <a href="subscribe.html" class="sticky-cta">Unlock Contacts</a>
+
   <footer class="footer">
     <div class="container">
       <p>© 2025 UrbanNest • All rights reserved</p>
     </div>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
