@@ -242,7 +242,7 @@ textarea {
   }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 300px) {
   .properties-grid,
   .agents-grid {
     grid-template-columns: 1fr;
@@ -505,7 +505,7 @@ body.dark-mode .badge {
   min-width: 180px;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 300px) {
   .home-search-section {
     margin-top: 0;
     padding: 18px 16px 4px;
